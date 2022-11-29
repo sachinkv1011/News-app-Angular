@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { NewsLiveComponent } from './news-live/news-live.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { RouterModule, Routes } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 const route:Routes=[
   {
@@ -22,7 +23,8 @@ const route:Routes=[
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(route)
+    RouterModule.forRoot(route),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
